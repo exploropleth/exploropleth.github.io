@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXV85PGS9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XCXV85PGS9');
+    </script>
+
+    <!-- Hotjar Tracking Code for Exploropleth Homepage -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:6440049,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <title>Exploropleth | Home</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploropleth: Exploratory Analysis of Data Binning Methods in Choropleth Maps">
+    <meta name="author" content="Arpit Narechania">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://exploropleth.github.io/">
+    <meta property="og:title" content="Exploropleth">
+    <meta property="og:description"
+        content="Exploropleth: Exploratory Analysis of Data Binning Methods in Choropleth Maps">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/exploropleth/exploropleth.github.io/main/assets/images/overview.png">
+    <!--<meta property="og:video" content="">-->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://exploropleth.github.io/">
+    <meta property="twitter:title" content="Exploropleth">
+    <meta property="twitter:description"
+        content="Exploropleth: Exploratory Analysis of Data Binning Methods in Choropleth Maps">
+    <meta property="twitter:image"
+        content="https://raw.githubusercontent.com/exploropleth/exploropleth.github.io/main/assets/images/overview.png">
+    <meta property="twitter:site" content="@arpitnarechania">
+    <meta property="twitter:creator" content="@arpitnarechania">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="./assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./assets/plugins/elegant_font/css/style.css">
+    <link rel="stylesheet" href="./assets/plugins/prism/prism.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Custom CSS -->
+    <link id="custom-style" rel="stylesheet" href="./assets/css/custom.css">
+</head>
+
+<body class="landing-page">
+
+    <!-- GITHUB BUTTON JS -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <div class="page-wrapper">
+
+        <!-- ******Header****** -->
+        <header class="header text-center">
+            <div class="container">
+                <div class="branding my-4">
+                    <h1 class="logo">
+                        <img src="./assets/images/logo-darkbg.png" class="img-center" width="350" alt="Exploropleth logo" />
+                    </h1>
+                </div><!--//branding-->
+                <div class="d-flex justify-content-center align-items-center flex-column my-4">
+                    <div class="authors mx-3">
+                        <a href="https://narechania.com" target="_blank"><strong>Arpit Narechania</strong></a>,
+                        <a href="https://va.gatech.edu/endert/" target="_blank"><strong>Alex Endert</strong></a>,
+                        <a href="https://friendlycities.gatech.edu" target="_blank"><strong>Clio Andris</strong></a>
+                    </div>
+                    <div class="affiliations mx-3">
+                        <img class="m-2" src="assets/images/gatech-logo.png" height="40"/>
+                        <img class="m-2" src="assets/images/hkust-logo.png" height="40"/>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <a class="btn btn-primary btn-cta" href="http://github.com/exploropleth" target="_blank"><i
+                            class="fab fa-github"></i> View on GitHub</a>
+                </div><!--//cta-container-->
+
+            </div><!--//container-->
+        </header><!--//header-->
+
+        <section class="cards-section text-center">
+            <div class="container">
+                <div class="intro">
+                    <h2>Hi, Welcome to Exploropleth!</h2>
+                    <br />
+                    <p class="text-left">
+                        A choropleth map is a type of thematic map where administrative units or geographic regions are represented in different colors, shades, or patterns to represent the magnitude of an attribute associated with the underlying geography. A key part of creating choropleth maps is data binning (or classification), a process that transforms continuous data values into discrete bins (or classes) to highlight patterns and trends across geographic region. However, determining these bins is challenging as there is no single, ideal method. Furthermore, applying a binning method without careful consideration may create false patterns on the map misrepresent the actual geographic phenomena, which is both ineffective and misleading. 
+                    </p>
+                    <p class="text-left">To understand how choropleth maps can lie and what we can do about them, we have thus far developed an open-source geospatial visualization tool (<a href="#exploropleth"><strong>Exploropleth</strong></a>), conducted interviews with professional cartographers and GIS experts to understand how they make maps (<a href="#cartographersincubicles"><strong>Cartographers in Cubicles</strong></a>), invented a new <i>consensus</i> data binning/classification method (<a href="#resiliency"><strong>Resiliency</strong></a>), and developed an open-source JavaScript library that offers 16+ data binning/classification methods (<a href="#binguru"><strong>BinGuru</strong></a>). Details below!</p>
+                    <hr>
+                    <div id="exploropleth">
+                        <h4><strong>Exploropleth</strong></h4>
+                        <h5><i>Exploratory Analysis of Data Binning Methods in Choropleth Maps</i></h5>
+                        <h6 class="text-secondary text-bold">Arpit Narechania, Alex Endert, Clio Andris</h6>
+                        <br/>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/lNV8VL0owqU?rel=0&amp;showinfo=0" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <br />
+                        <div>
+                            <a class="btn btn-info btn-cta m-xs" href=""
+                                target="_blank" download><i class="fas fa-file-pdf"></i> Paper (CaGIS'25)</a>
+                            &nbsp;&nbsp;
+                            <a class="btn btn-green btn-cta m-xs" href="https://narechania.com/docs/posters/exploropleth_cridc_2023.pdf" target="_blank" download><i class="fas fa-image"></i> Poster (CRIDC'23&nbsp;, Award)</a>
+                            &nbsp;&nbsp;
+                            <a class="btn btn-dark btn-cta m-xs" href="https://github.com/exploropleth/exploropleth" target="_blank"><i class="fas fa-key"></i> Code (GitHub)</a>
+                            &nbsp;&nbsp;
+                            <a class="btn btn-orange btn-cta m-xs" href="https://exploropleth.github.io/exploropleth" target="_blank"><i class="fas fa-rocket"></i> Live Demo</a>
+                        </div>
+                        </br>
+                        <p class="text-left">
+                            When creating choropleth maps, mapmakers often bin (i.e., group, classify) quantitative data values into groups to help show that certain areas fall within a similar range of values. For instance, a mapmaker may divide counties into groups of high, middle, and low life expectancy (measured in years). It is well known that different binning methods (e.g., natural breaks, quantile) yield different groupings, meaning the same data can be presented differently depending on how it is divided into bins. To help guide a wide variety of users, we present a new, open source, web-based, geospatial visualization tool, Exploropleth, that lets users interact with a catalog of established data binning methods, and subsequently compare, customize, and export custom maps. This tool advances the state of the art by providing multiple binning methods in one view and supporting administrative unit reclassification on-the-fly. We interviewed 16 cartographers and geographic information systems (GIS) experts from 13 government organizations, NGOs, and federal agencies who identified opportunities to integrate Exploropleth into their existing mapmaking workflow, and found that the tool has potential to educate students as well as mapmakers with varying levels of experience. Exploropleth is open-source and publicly available.
+                        </p>
+                        <div class="text-left">
+                            <p><strong>Citation:</strong></p>
+                            <pre style="background: #efefef">
+
+    @article{narechania2025exploropleth,
+        title={{Exploropleth: Exploratory Analysis of Data Binning Methods in Choropleth Maps}},
+        author={Narechania, Arpit and Endert, Alex and Andris, Clio},
+        journal={{Cartography and Geographic Information Science}},
+        year={2025}
+    }
+                            </pre>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="cartographersincubicles">
+                        <h4><strong>Cartographers in Cubicles</strong></h4>
+                        <h5><i>How Training and Preferences of Mapmakers Interplay with Structures and Norms in Not-for-Profit Organizations</i></h5>
+                        <h6 class="text-secondary text-bold">Arpit Narechania, Alex Endert, Clio Andris</h6>
+                        <br/>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/pkK0216P68o?rel=0&amp;showinfo=0&start=295&end=378&autoplay=1" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <br />
+                        <div>
+                            <a class="btn btn-info btn-cta m-xs" href="https://narechania.com/docs/publications/cartographers-in-cubicles_cscw_2025.pdf"
+                                target="_blank" download><i class="fas fa-file-pdf"></i> Paper (CSCW'25)</a>
+
+                        </div>
+                        </br>
+                        <p class="text-left">
+                            Choropleth maps are a common and effective way to visualize geographic thematic data. Although cartographers have established many principles about map design, data binning and color usage, less is known about how mapmakers make individual decisions in practice. We interview 16 cartographers and geographic information systems (GIS) experts from 13 government organizations, NGOs, and federal agencies about their choropleth mapmaking decisions and workflows. We categorize our findings and report on how mapmakers follow cartographic guidelines and personal rules of thumb, collaborate with other stakeholders within and outside their organization, and how organizational structures and norms are tied to decision-making during data preparation, data analysis, data binning, map styling, and map post-processing. We find several points of variation as well as regularity across mapmakers and organizations and present takeaways to inform cartographic education and practice, including broader implications and opportunities for CSCW, HCI, and information visualization researchers and practitioners.
+                        </p>
+                        <div class="text-left">
+                            <p><strong>Citation:</strong></p>
+                            <pre style="background: #efefef">
+
+    @article{narechania2025cartographersincubicles,
+        title = {{Cartographers in Cubicles: How Training and Preferences of Mapmakers Interplay with Structures and Norms in Not-for-Profit Organizations}},
+        shorttitle = {{Cartographers in Cubicles}},
+        author = {{Narechania}, Arpit and {Endert}, Alex and {Andris}, Clio},
+        journal = {ACM CSCW},
+        year = {2025},
+        publisher = {ACM}
+    }
+                            </pre>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="resiliency">
+                        <h4><strong>Resiliency</strong></h4>
+                        <h5><i>A Consensus Data Binning Method</i></h5>
+                        <h6 class="text-secondary text-bold">Arpit Narechania, Alex Endert, Clio Andris</h6>
+                        <br/>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/pkK0216P68o?rel=0&amp;showinfo=0&start=255&end=282&autoplay=1" frameborder="0"
+                                allowfullscreen></iframe>
+                        </div>
+                        <br />
+                        <div>
+                            <a class="btn btn-info btn-cta m-xs" href="https://narechania.com/docs/publications/resiliency_giscience_2023.pdf"
+                                target="_blank" download><i class="fas fa-file-pdf"></i> Paper (GIScience'23)</a>
+                            &nbsp;&nbsp;
+                            <a class="btn btn-dark btn-cta m-xs" href="https://github.com/arpitnarechania/binguru/blob/ac5c1a14969e6f8af9236d0dd3d290c17607f7b9/src/index.ts#L890"
+                                target="_blank"><i class="fas fa-key"></i> Code (GitHub)</a>
+                            &nbsp;&nbsp;
+                            <a class="btn btn-orange btn-cta m-xs" href="https://exploropleth.github.io/resiliency-app" target="_blank"><i class="fas fa-rocket"></i> Live Demo</a>
+                        </div>
+                        </br>
+                        <p class="text-left">Data binning, or data classification, involves grouping quantitative data points into bins (or classes) to represent spatial patterns and show variation in choropleth maps. There are many methods for binning data (e.g., natural breaks, quantile) that may make the same data appear very different on a map. Some of these methods may be more or less appropriate for certain types of data distributions and map purposes. Thus, when designing a map, novice users may be overwhelmed by the number of choices for binning methods and experts may find comparing results from different binning methods challenging. We present resiliency, a new data binning method that assigns areal units to their most agreed-upon, consensus bin as it persists across multiple chosen binning methods. We show how this "smart average" can effectively communicate spatial patterns that are agreed-upon across binning methods. We also measure the variety of bins a single areal unit can be placed in under different binning methods showing fuzziness and uncertainty on a map. Resiliency is available in an open-source JavaScript library, BinGuru, described next.
+                        </p>
+                        <div class="text-left">
+                            <p><strong>Citation:</strong></p>
+                            <pre style="background: #efefef">
+
+    @article{narechania2023resiliency,
+        title={{Resiliency: A Consensus Data Binning Method}},
+        author={Narechania, Arpit and Endert, Alex and Andris, Clio},
+        journal={12th International Conference on Geographic Information Science (GIScience)},
+        year={{2023}},
+        publisher={Leibniz International Proceedings in Informatics},
+        url={https://doi.org/10.4230/LIPIcs.GIScience.2023.55}
+    }
+                            </pre>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="binguru">
+                        <h4><strong>BinGuru</strong></h4>
+                        <h5><i>Open-Source JavaScript Library for Data Binning/Classification</i></h5>
+                        <h6 class="text-secondary text-bold">Arpit Narechania, Alex Endert, Clio Andris</h6>
+                        <br/>
+                        <div class="img-teaser-parent">
+                            <img class="img-teaser img-center" src="assets/images/binguru.png"></iframe>
+                        </div>
+                        <br />
+                        <div>
+                            <a class="btn btn-dark btn-cta m-xs" href="https://github.com/arpitnarechania/binguru"
+                                target="_blank"><i class="fas fa-key"></i> Code (GitHub)</a>
+                            &nbsp;&nbsp;
+                            <a class="btn btn-orange btn-cta m-xs"
+                                href="https://observablehq.com/@arpitnarechania/binguru-demo" target="_blank"><i
+                                    class="fas fa-rocket"></i> Demo (Observable Notebook)</a>
+                        </div>
+                        </br>
+                        <p class="text-left">BinGuru is a JavaScript package with an API to several established data binning / data classification methods (including Resiliency) that are often used for visualizing data on choropleth maps. Currently supported methods include:
+                        </p>
+                        <div class="text-left">
+                            <ul>
+                                <li>Equal Interval</li>
+                                <li>Percentile</li>
+                                <li>Defined Interval</li>
+                                <li>Quantile</li>
+                                <li>Boxplot</li>
+                                <li>Standard Deviation</li>
+                                <li>Maximum Breaks</li>
+                                <li>Pretty Breaks</li>
+                                <li>CK-Means</li>
+                                <li>Head Tail Breaks</li>
+                                <li>Fisher-Jenks</li>
+                                <li>Exponential Bin ize</li>
+                                <li>Geometric Interval</li>
+                                <li>Unclassed</li>
+                                <li>Unique</li>
+                                <li>Manual Interval</li>
+                                <li>Resiliency</li>
+                            </ul>
+                        </div>
+                        <p class="text-left">
+    Install the library via <code>pip install binguru</code>
+                        </p>
+                        <div class="text-left">
+                            <p><strong>Sample Code:</strong></p>
+                            <pre style="background: #efefef">
+
+    import { BinGuru } from "binguru";
+
+    let rawData = [1, 45, 65, 23, 65, 87, 54, 45, 31, 21, 12, 12, 98, 56, 76, null, null, "nan", undefined, "", "null"]; // Input array of numbers, strings, nulls, nans, undefineds.
+    let binCount = 5; // Desired number of bins (inconsequential for certain binning methods, e.g., boxPlot).
+    let binExtent = 10; // Desired bin interval (only applicable for certain binning methods, e.g., definedInterval).
+    let precision = 2; // Desired rounding off precision.
+    let binGuruObj = new BinGuru(rawData=rawData, binCount=binCount, binExtent=binExtent, precision=precision); // Initialize an instance of BinGuru
+
+    let bins = binGuruObj.fisherJenks(); // Call an endpoint, e.g., fisherJenks() to bin using the FisherJenks / Natural Breaks binning method first.
+    console.log(bins);
+                            </pre>
+                        </div>
+                    </div>
+                </div><!--//intro-->
+            </div><!--//container-->
+        </section><!--//cards-section-->
+    </div><!--//page-wrapper-->
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div>
+                <div class="my-2">
+                    <img src="./assets/images/logo-darkbg.png" class="img-center" width="250" alt="Exploropleth logo" />
+                    <small>&copy;&nbsp;2025</small>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column my-4">
+                    <div class="authors mx-3 text-white">
+                        <a href="https://narechania.com" target="_blank">Arpit Narechania</a>, <a href="https://va.gatech.edu/endert/" target="_blank">Alex Endert</a>, <a href="https://friendlycities.gatech.edu" target="_blank">Clio Andris</a>
+                    </div>
+                    <div class="affiliations mx-3">
+                        <img class="m-2" src="assets/images/gatech-logo.png" height="40"/>
+                        <img class="m-2" src="assets/images/hkust-logo.png" height="40"/>
+                    </div>
+                </div>
+            </div>
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a
+                    href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="./assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="./assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="./assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+    <script type="text/javascript" src="./assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
