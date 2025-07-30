@@ -189,6 +189,10 @@ code {
   padding: 7px 15px;
 }
 
+.btn-cta-sm {
+  padding: 4px 8px;
+}
+
 .search-btn {
   height: 40px;
 }
@@ -1211,7 +1215,8 @@ select {
 
 /* ======= Landing Page ======= */
 .landing-page .header {
-  background: #494d55;
+  /* background: #494d55; */
+  background: #26282c;
   color: rgba(255, 255, 255, 0.85);
   padding: 60px 0;
 }
