@@ -29,6 +29,10 @@ body {
     margin: 8px;
 }
 
+.mr-0 {
+    margin-right: 0;
+}
+
 .p-sm{
     padding: 8px;
 }
